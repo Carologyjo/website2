@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carology - Auto Detailing Services</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+    }
+    header {
+      padding: 10px 20px; /* Smaller padding */
+      text-align: center;
+    }
+    header img {
+      height: 30px; /* Adjust the height as needed */
+      margin: 0 10px; /* Add space between logos */
+    }
+    #logo {
+      max-width: 300px; /* Decrease the logo size */
+      height: auto;
+      margin: 0 auto; /* Center the logo */
+      display: block; /* Make the logo a block element */
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    section h2 {
+      color: red;
+    }
+    a.button {
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 0 10px; /* Add space between buttons */
+    }
+    a.button:hover {
+      background-color: #f0f0f0;
+      color: black;
+    }
+    #gallery-container {
+      overflow: hidden;
+      text-align: center;
+    }
+    #gallery {
+      white-space: nowrap;
+      animation: scrollGallery 20s linear infinite;
+    }
+    #gallery img {
+      max-width: 200px;
+      height: auto;
+      margin: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid white;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: red;
+    }
+    td {
+      background-color: black;
+    }
+    .reviews-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .review {
+      width: 48%; /* Adjust width to fit two reviews per row */
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid red;
+      border-radius: 5px;
+      background-color: black;
+    }
+    /* Animation */
+    @keyframes scrollGallery {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    footer {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Small Logos -->
+  <header>
+    <a href="https://www.facebook.com/carologyjo/" target="_blank"><img src="facebook-logo.png" alt="Facebook Logo"></a>
+    <a href="https://www.instagram.com/carologyjo/" target="_blank"><img src="instagram-logo.png" alt="Instagram Logo"></a>
+    <a href="https://maps.google.com/" target="_blank"><img src="google-maps-logo.png" alt="Google Maps Logo"></a>
+  </header>
+
+  <!-- Logo -->
+  <img id="logo" src="logo.png" alt="Carology Logo">
+
+  <!-- Main Content -->
+  <main>
+    <!-- Video Section -->
+    <section id="video">
+      <!-- Embed your video here -->
+      <video controls width="640" height="360">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Welcome to our auto detailing business based in Amman, Jordan, where we specialize in providing top-notch dry cleaning and washing services for cars. With a passion for automotive care and a commitment to excellence, we pride ourselves on delivering unparalleled results to our valued customers. Our dedicated team utilizes state-of-the-art techniques and premium products to ensure that every vehicle receives the meticulous attention it deserves. Whether you're looking to restore your car's shine or maintain its pristine condition, you can trust us to exceed your expectations. Experience the difference with our professional auto detailing services, where cleanliness meets perfection.</p>
+    </section>
+
+    <!-- Before and After Gallery Section -->
+    <section id="gallery-container">
+      <h2>Before and After</h2>
+      <div id="gallery">
+        <!-- Add before-and-after images here -->
+        <img src="before.jpg" alt="Before">
+        <img src="after.jpg" alt="After">
+        <img src="before2.jpg" alt="Before">
+        <img src="after2.jpg" alt="After">
+        <img src="before3.jpg" alt="Before">
+        <img src="after3.jpg" alt="After">
+        <img src="before4.jpg" alt="Before">
+        <img src="after4.jpg" alt="After">
+        <img src="before5.jpg" alt="Before">
+        <img src="after5.jpg" alt="After">
+      </div>
+    </section>
+
+    <!-- Prices Section -->
+    <section id="prices">
+      <h2>Our Prices</h2>
+      <table>
+        <tr>
+          <th></th>
+          <th>Washing</th>
+          <th>Dry Cleaning</th>
+        </tr>
+        <tr>
+          <td>Small</td>
+          <td>5 JD</td>
+          <td>15 JD</td>
+        </tr>
+        <tr>
+          <td>Medium</td>
+          <td>6 JD</td>
+          <td>19 JD</td>
+        </tr>
+        <tr>
+          <td>Large</td>
+          <td>7 JD</td>
+          <td>23 JD</td>
+        </tr>
+      </table>
+      <a href="tel:0799392013" class="button">Reserve Now</a>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+      <h2>Customer Reviews</h2>
+      <div class="reviews-container">
+        <div class="review">1. "Absolutely impressed with the service at this auto detailing business! My car looked brand new after their thorough dry cleaning and washing. The attention to detail was outstanding, and the staff were friendly and professional. Highly recommend!"</div>
+        <div class="review">2. "I've tried several car wash services in Amman, but none compare to this one. The team here goes above and beyond to ensure customer satisfaction. My car has never looked better, thanks to their meticulous detailing. I won't trust anyone else with my vehicle!"</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <h2>Contact Us</h2>
+    <p>For further information and questions, contact us:</p>
+    <p>Phone: 0799392013</p>
+    <p>Email: adamhalawa@hotmail.com</p>
+    <p>&copy; 2024 Carology - Auto Detailing Services</p>
+  </footer>
+</body>
+</html>
